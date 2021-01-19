@@ -1,0 +1,132 @@
+/* Main configuration */
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+  margin: 10px 0;
+  background: url("../bg.jpg");
+  background-size: cover;
+  color: white;
+  font-family: "Roboto";
+  text-shadow: 3px 3px black;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+  background: rgba(0, 0, 0, 0.6);
+  color: transparent;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/* Banner/meni stil */
+
+.banner-meni-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 20px 0 25px;
+}
+
+.banner-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 35%;
+  margin-bottom: 15px;
+}
+
+.banner-wrap > h1 {
+  color: #0067ac;
+  align-self: center;
+}
+
+.banner-meni-wrap ul {
+  list-style: none;
+  margin: 0 auto;
+}
+
+.banner-meni-wrap ul li {
+  display: inline;
+}
+
+.banner-meni-wrap ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  margin-right: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.banner-meni-wrap ul li a:hover {
+  color: #0067ac;
+}
+
+/* Glavni content stil  */
+
+.content-wrap {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 400px;
+}
+
+.single-input-field {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+label,
+p {
+  color: white;
+}
+
+input[type="file"] {
+  align-self: center;
+  direction: rtl;
+  color: white;
+  width: 100%;
+}
+
+.button > button {
+  align-self: flex-end;
+  background: #0067ac;
+  border: none;
+}
+
+.button > button:hover {
+  background: #1c9aed;
+}
+
+/* Footer stil */
+
+footer {
+  align-self: center;
+}
+
+footer a {
+  color: #0067ac;
+}

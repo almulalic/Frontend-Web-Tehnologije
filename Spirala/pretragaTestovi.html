@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mocha Tests</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
+    <link rel="stylesheet" href='./pretragaTestovi.css'/>
+    <style>
+      td {
+        border: 1px solid black;
+        height: 20px;
+        width: 20px;
+        color:white;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="main-wrapper">
+
+      <div class="overlay">.</div>
+
+    <div class="test-output-wrap">
+    <div id="ispis"></div>
+    <div id="mocha"></div>
+  </div>
+  
+    <div class="pretraga-inputi">
+      <div class="pretraga-input-field">
+        <input
+          type="text"
+          placeholder="Pretraga pojma/predmeta..."
+          onkeyup="Pretraga.pretragaPredmet(this.value)"
+        />
+      </div>
+      <div class="pretraga-input-field">
+        <input
+          type="text"
+          onkeyup="Pretraga.pretragaNastavnik(this.value)"
+          placeholder="Pretraga profesora..."
+        />
+      </div>
+      <div class="pretraga-input-field">
+        <input
+          type="text"
+          placeholder="Pretraga godine..."
+          onkeyup="Pretraga.pretragaGodina(this.value)"
+        />
+      </div>
+    </div>
+
+    <div id="predmeti-wrap" class="content-wrap">
+      <table class="lijeva-tabela">
+        <tr></tr>
+        <tr class="opis-red">
+          <td class="naziv-predmeta">Naziv predmeta</td>
+          <td class="opis">Opis</td>
+          <td class="profesor">Profesor</td>
+        </tr>
+
+        <tr class="red-predmet prva" id="fwt">
+          <td class="naziv-predmeta">Frontend Web Tehnologije</td>
+          <td class="opis">
+            Standardne arhitekture i načini programiranja, HTML, kaskadni
+            listovi stila ,vrste selektora, JavaScript protokoli na web-u,
+            principi web servera, java web programming, java server pages, jezik
+            PHP, pristup bazama podatka iz web aplikacija, XML, Web servisi SOAP
+            i REST
+          </td>
+          <td
+            class="profesor"
+            onmouseenter="handleSelect('Vensada Okanović',1)"
+            onmouseleave="handleSelect('Vensada Okanović',2)"
+          >
+            Vensada Okanović
+          </td>
+        </tr>
+
+        <tr class="red-predmet prva" id="mur1">
+          <td class="naziv-predmeta">Matematika U Računarstvu I</td>
+          <td class="opis">
+            Matematička logika, skupovi, predikatska logika,teorija
+            brojeva,enumerativna kombinatorika diskretna teorija Vjerovatnoće,
+            logika grafova, teorije jezika i automata
+          </td>
+          <td
+            class="profesor"
+            onmouseenter="handleSelect('Razija Turčinhodžić',1)"
+            onmouseleave="handleSelect('Razija Turčinhodžić',2)"
+          >
+            Razija Turčinhodžić
+          </td>
+        </tr>
+
+        <tr class="red-predmet prva" id="rp">
+          <td class="naziv-predmeta">Računarska Pismenost</td>
+          <td class="opis">
+            Trenutni tehnologški trendovi,osnovne računarske komponente,
+            korištenje interneta, aplikativni softver, sistemski softver,
+            razumjevanje i procjena hardvera, osnovni koncepti umrežavanja
+            računarskih sistema, digitalne komponente, etika u računarstvu
+          </td>
+          <td
+            class="profesor"
+            onmouseenter="handleSelect('Amila Akagić',1)"
+            onmouseleave="handleSelect('Amila Akagić',2)"
+          >
+            Amila Akagić
+          </td>
+        </tr>
+
+        <tr class="red-predmet prva" id="uubp">
+          <td class="naziv-predmeta">Uvod U Baze Podataka</td>
+          <td class="opis">
+            Historijski pregled,relacijski modeli podataka,SQL upitni jezik,
+            poboljšano pretraživanje podataka integritet podataka,store
+            prodecure funkcije i paketi baze podataka, normalizayija,zavisnost
+            paketa
+          </td>
+          <td
+            class="profesor"
+            onmouseenter="handleSelect('Emir Buza',1)"
+            onmouseleave="handleSelect('Emir Buza',2)"
+          >
+            Emir Buza
+          </td>
+        </tr>
+
+        <tr class="red-predmet prva" id="uup">
+          <td class="naziv-predmeta">Uvod U Programiranje</td>
+          <td class="opis">
+            Analiza i rješavanje problema, programski jezik C, kontrolne
+            stukture,operatori, nizovi, pokazaivači funkcije,strukture,nizovi
+            struktura, datoteke,modularnost programa,bibloiteke,dinamično
+            alociranje memorije
+          </td>
+          <td
+            class="profesor"
+            onmouseenter="handleSelect('Vedran Ljubović',1)"
+            onmouseleave="handleSelect('Vedran Ljubović',2)"
+          >
+            Vedran Ljubović
+          </td>
+        </tr>
+
+        <tr class="red-predmet prva" id="mur2">
+          <td class="naziv-predmeta">Matematika U Računarstvu II</td>
+          <td class="opis">
+            Vektori i matrice, sistemi linearnih jednačina, analitička
+            geometrija u ravni, osnovni brojevni skupovi, elementarne funkcije,
+            granički procesi, diferencijalni račun funkcija jedne promjenjive,
+            integralni račun funkcija jedne promjenjive
+          </td>
+
+          <td
+            class="profesor"
+            onmouseenter="handleSelect('Amila Akagić',1)"
+            onmouseleave="handleSelect('Amila Akagić',2)"
+          >
+            Amila Akagić
+          </td>
+        </tr>
+
+        <tr class="red-predmet prva" id="ram">
+          <td class="naziv-predmeta">Račuanrske arhitekture i mreže</td>
+          <td class="opis">
+            Prikazi podataka bitovi bajtovi i rijeci, osnovni blokovi,
+            skladištenje podataka, principit operativnih sistema, U/I uređaj
+            buffering programirani i interrupt-driven i/o, datotečni sistemi,
+            historija interneta, LAN I WAN, protokoli
+          </td>
+          <td
+            class="profesor"
+            onmouseenter="handleSelect('Vedran Ljubović',1)"
+            onmouseleave="handleSelect('Vedran Ljubović',2)"
+          >
+            Vedran Ljubović
+          </td>
+        </tr>
+
+        <tr class="red-predmet prva" id="rs">
+          <td class="naziv-predmeta">Razvoj Softvera</td>
+          <td class="opis">
+            Proces razvoja softvera, UML dijagrami interakcije, UML dijagrami
+            stanja, Mapiranje UML modela, java programiranje, encapsulation,
+            polimorfizam sasljeđivanje,interfejsi, date/time api, konkurenosti,
+            razvoj softvera primjenom UML i Java programskog jezika
+          </td>
+          <td
+            class="profesor"
+            onmouseenter="handleSelect('Emir Buza',1)"
+            onmouseleave="handleSelect('Emir Buza',2)"
+          >
+            Emir Buza
+          </td>
+        </tr>
+
+        <tr class="red-predmet prva" id="tp">
+          <td class="naziv-predmeta">Tehnike Programiranja</td>
+          <td class="opis">
+            Osnove imperativnog programiranja u jeziku C++, napredno imperativno
+            porgramiranje u jeziku C++, objektno zasnovano programiranje u
+            jeziku C++, objektno orjetirano programiranje u jeziku C++,
+            polimorfno kopiranje
+          </td>
+          <td
+            class="profesor"
+            onmouseenter="handleSelect('Željko Jurić',1)"
+            onmouseleave="handleSelect('Željko Jurić',2)"
+          >
+            Željko Jurić
+          </td>
+        </tr>
+
+        <tr class="red-predmet prva" id="vis">
+          <td class="naziv-predmeta">Vjerovatnoća i Statistika</td>
+          <td class="opis">
+            Statistika i skupljanje podataka, osnovne kombinatorike, uslovna
+            Vjerovatnoća, slučajne promjenjive, matematičko očekivanje, sredina
+            i varijansa, neke diskretne vjerovatnosne raspodjele fundamentalne
+            raspodjele uzoraka i opis podataka, procjene aritmetičke
+            sredine,proporcije, statističke hipoteze,jednostavna linearna
+            regresija i koleracija
+          </td>
+          <td
+            class="profesor"
+            onmouseenter="handleSelect('Vensada Okanović',1)"
+            onmouseleave="handleSelect('Vensada Okanović',2)"
+          >
+            Vensada Okanović
+          </td>
+        </tr>
+
+        <tr>
+          <th colspan="3">Druga godina</th>
+        </tr>
+        <tr class="opis-red">
+          <td class="naziv-predmeta">Naziv predmeta</td>
+          <td class="opis">Opis</td>
+          <td class="profesor">Profesor</td>
+        </tr>
+
+        <tr class="red-predmet druga" id="asp">
+          <td class="naziv-predmeta">
+            Algoritmi i Strukture Podataka
+          </td>
+          <td class="opis">
+            Uvod u algoritme, strukture podataka, nizovi, liste, stabla,
+            klasični sekvencijalni algoritmi za sortiranje, algoritmi za
+            pretraživanje, tehnike dizajniranog alogirtmna, algoritmi za
+            vraćanje unazad, pohlpeni algoritmi, alogirtmi nad grafovima,
+            algoritmi za odrezivanje minimalno povezujućeg stabla, praktični rad
+          </td>
+          <td
+            class="profesor"
+            onmouseenter="handleSelect('Željko Jurić',1)"
+            onmouseleave="handleSelect('Željko Jurić',2)"
+          >
+            Željko Jurić
+          </td>
+        </tr>
+
+        <tr class="red-predmet druga" id="ice">
+          <td class="naziv-predmeta">
+            Interakcija Čovjek - Računar
+          </td>
+          <td class="opis">
+            Interakcija čovjek - računar, razumijevanje i analiza korisnika,
+            promišljanje dizajna, projektovanje interakcije, prototip:
+            uloga,vrste,alati, primjeri dobrog projektovanja interakcije,
+            tehnike vizualizacijem evaluacija upotrenljivosti, značaj, principi,
+            metode, korisnička evaluacija,ekspertska evaluacija
+          </td>
+          <td
+            class="profesor"
+            onmouseenter="handleSelect('Razija Turčinhodžić',1)"
+            onmouseleave="handleSelect('Razija Turčinhodžić',2)"
+          >
+            Razija Turčinhodžić
+          </td>
+        </tr>
+
+        <tr class="red-predmet druga" id="pjp">
+          <td class="naziv-predmeta">
+            Programski Jezici i Prevodioci
+          </td>
+          <td class="opis">
+            Programiranje na niskom nivou, opis sintakse i semantike, leksička
+            analiza, imena i povezivanja, primitivni tipovi podataka,imperativno
+            programiranje i stuktuirano programiranje, potprogrami i
+            prosljeđivanje parametara, apstraktni tipovi podataka i
+            enkapsulacija, objektno orijentisano programiranjem funkcionalno
+            programiranje, logički jezici, izuzeci
+          </td>
+          <td
+            class="profesor"
+            onmouseenter="handleSelect('Vedran Ljubović',1)"
+            onmouseleave="handleSelect('Vedran Ljubović',2)"
+          >
+            Vedran Ljubović
+          </td>
+        </tr>
+
+        <tr class="red-predmet druga" id="sp">
+          <td class="naziv-predmeta">Skladišta Podataka</td>
+          <td class="opis">
+            Uvod u skladišta podataka, planiranje i izgradnja skladišta
+            podataka, Dizajn skladišta podataka, Shema skladišta podataka,
+            dimenzije i tabela, Komponente skladišta podataka, ETL proces,
+            agregacija podataka, ciljevi i rizici agregacije, odabir dimenzije,
+            web bazirana skladišta podatakam, rudarenje podataka, tehnike
+            rudarenja podataka
+          </td>
+          <td
+            class="profesor"
+            onmouseenter="handleSelect('Emir Buza',1)"
+            onmouseleave="handleSelect('Emir Buza',2)"
+          >
+            Emir Buza
+          </td>
+        </tr>
+
+        <tr class="red-predmet druga" id="vivs">
+          <td class="naziv-predmeta">
+            Validacija i Verifikacija Softvera
+          </td>
+          <td class="opis">
+            Kontrola kvaliteta softvera, standardizacija kontrole kvaliteta
+            softvera, integracija aktivnosti kvaliteta u razvojni proces
+            softvera, efektivnost i cijena uklapanja defekta u životnom,
+            formalni pregled dizajna, testiranje-osnovni koncepti strategije i
+            tehinke, softverske metrike
+          </td>
+          <td
+            class="profesor"
+            onmouseenter="handleSelect('Razija Turčinhodžić',1)"
+            onmouseleave="handleSelect('Razija Turčinhodžić',2)"
+          >
+            Razija Turčinhodžić
+          </td>
+        </tr>
+
+        <tr class="red-predmet druga" id="wt">
+          <td class="naziv-predmeta">Web Tehnologije</td>
+          <td class="opis">
+            Standardne arhitekture i načini programiranja, HTML, kaskadni
+            listovi stila ,vrste selektora, JavaScript protokoli na web-u,
+            principi web servera, java web programming, java server pages, jezik
+            PHP, pristup bazama podatka iz web aplikacija, XML, Web servisi SOAP
+            i REST
+          </td>
+          <td
+            class="profesor"
+            onmouseenter="handleSelect('Željko Jurić',1)"
+            onmouseleave="handleSelect('Željko Jurić',2)"
+          >
+            Željko Jurić
+          </td>
+        </tr>
+
+        <tr class="red-predmet druga" id="nrs">
+          <td class="naziv-predmeta">Napredni Razvoj Softvera</td>
+          <td class="opis">
+            Osnovni principi softverskog inžinjerstva, radno okruženje za razvoj
+            softvera, sistemi za kontrolu izvornog koda, upravljanje softverskim
+            projektima , neprikladna integracija, nepekidna
+            instalacija/deplozment, neprekidni monitoring i neprekidni nadzor
+          </td>
+          <td
+            class="profesor"
+            onmouseenter="handleSelect('Vensada Okanović',1)"
+            onmouseleave="handleSelect('Vensada Okanović',2)"
+          >
+            Vensada Okanović
+          </td>
+        </tr>
+
+        <tr class="red-predmet druga" id="rma">
+          <td class="naziv-predmeta">Razvoj Mobilnih Aplikacija</td>
+          <td class="opis">
+            Hardverska i softverska arhitektura mobilnih uređaja, principi
+            razvoja mobilnih aplikacija, mobilni korisnički interfejs,
+            komunikacija preko mreža, integracija sa mobilnim hardversom,
+            lokacijski servisi, problem u razvoju mobilnih aplikacija
+          </td>
+          <td
+            class="profesor"
+            onmouseenter="handleSelect('Razija Turčinhodžić',1)"
+            onmouseleave="handleSelect('Razija Turčinhodžić',2)"
+          >
+            Razija Turčinhodžić
+          </td>
+        </tr>
+
+        <tr class="red-predmet druga" id="zr">
+          <td class="naziv-predmeta">Završni rad</td>
+          <td class="opis">
+            Praksa u firmi i pravom radnom okruženju u trajanju jednog semestra
+          </td>
+          <td
+            class="profesor"
+            onmouseenter="handleSelect('Amila Akagić',1)"
+            onmouseleave="handleSelect('Amila Akagić',2)"
+          >
+            Amila Akagić
+          </td>
+        </tr>
+      </table>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/chai/chai.js"></script>
+    <script src="https://unpkg.com/mocha/mocha.js"></script>
+
+    <script class="mocha-init">
+      mocha.setup("bdd");
+      mocha.checkLeaks();
+    </script>
+
+    <script src="./godine.js"></script>
+    <script src="./pretraga.js"></script>
+    <script src="./pretragaTestovi.js"></script>
+    <script class="mocha-exec">
+      mocha.run();
+    </script>
+  </body>
+</html>

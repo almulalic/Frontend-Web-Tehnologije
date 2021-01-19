@@ -1,0 +1,46 @@
+.mainWrap {
+    display: grid;
+    grid-auto-rows: 1fr 1fr 1fr;
+}
+
+.mainContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.header {
+    background:cadetblue;
+    height: 100px;
+}
+
+.leftCol {
+    background:orange;
+    grid-column: 1;
+    height: 200px;
+}
+
+.midContent {
+    height: 100px;
+}
+
+.midTop {
+    background:gray;
+    height: 130px;
+    grid-column: 2/3;
+}
+
+.midDown {
+    background:pink;
+    height: 120px;
+    grid-column: 2/3;
+}
+
+.rightCol {
+    background:lightblue;
+    grid-column: 4;
+}
+
+.footer {
+    background:lightgreen;
+    height: 70px;
+}

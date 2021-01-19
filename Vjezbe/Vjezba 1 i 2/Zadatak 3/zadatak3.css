@@ -1,0 +1,37 @@
+* {
+    background: yellow;
+}
+
+
+p {
+    text-align: center;
+}
+
+.imeKolone{
+    text-align: left;
+    font-weight: bold;
+}
+
+td {
+    text-align: center;
+}
+
+table {
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 15px;
+    height: 20px;
+}
+
+.gray > td{
+    background:gray;
+    font-weight: bold;
+}

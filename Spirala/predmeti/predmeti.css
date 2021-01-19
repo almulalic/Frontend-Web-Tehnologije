@@ -1,0 +1,166 @@
+/* Main configuration */
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+  margin: 10px 0;
+  background: url("../bg.jpg");
+  background-size: cover;
+  color: white;
+  font-family: "Roboto";
+  text-shadow: 3px 3px black;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+  background: rgba(0, 0, 0, 0.6);
+  color: transparent;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/* Banner/meni stil */
+
+.banner-meni-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 20px 0 25px;
+}
+
+.banner-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 35%;
+  margin-bottom: 15px;
+}
+
+.banner-wrap > h1 {
+  color: #0067ac;
+  align-self: center;
+}
+
+.banner-meni-wrap ul {
+  list-style: none;
+  margin: 0 auto;
+}
+
+.banner-meni-wrap ul li {
+  display: inline;
+}
+
+.banner-meni-wrap ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  margin-right: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.banner-meni-wrap ul li a:hover {
+  color: #0067ac;
+}
+
+/* Glavni content stil  */
+
+.button-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.predmeti-button {
+  background: rgba(44, 134, 194, 0.3);
+  border: 2px solid white;
+  padding: 5px;
+  margin-right: 10px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.content-wrap {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  row-gap: 30px;
+  margin-top: 40px;
+}
+
+.header-predmeta {
+  display: grid;
+  grid-template-columns: 10% 25% 25% 5% 5% 5% 10% 15%;
+  background: rgba(44, 134, 194, 0.6);
+}
+
+.header-predmeta > p {
+  text-align: center;
+  border: 2px solid white;
+  padding: 20px;
+  margin: 0;
+}
+
+.predmet-opis {
+  display: grid;
+  grid-template-columns: 10% 25% 25% 5% 5% 5% 10% 15%;
+  border: 2px solid white;
+  border-top: none;
+  text-align: center;
+  background: rgba(44, 134, 194, 0.3);
+  position: relative;
+}
+
+.predmet-opis p:not(:last-child) {
+  border-right: 2px solid white;
+}
+
+.header-predmeta p:not(:last-child) {
+  border-right: 2px solid white;
+}
+
+.center {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border: 2px solid white;
+  height: 100%;
+}
+
+.center p {
+  width: 100%;
+}
+
+/* Footer stil */
+
+footer {
+  align-self: center;
+}
+
+footer a {
+  color: #0067ac;
+}

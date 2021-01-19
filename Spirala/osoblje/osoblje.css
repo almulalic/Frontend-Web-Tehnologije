@@ -1,0 +1,198 @@
+/* Main configuration */
+/* Main configuration */
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+  margin: 10px 0;
+  background: url("../bg.jpg");
+  background-size: cover;
+  color: white;
+  font-family: "Roboto";
+  text-shadow: 3px 3px black;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+  background: rgba(0, 0, 0, 0.6);
+  color: transparent;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/* Banner/meni stil */
+
+.banner-meni-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 20px 0 25px;
+}
+
+.banner-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 35%;
+  margin-bottom: 15px;
+}
+
+.banner-wrap > h1 {
+  color: #0067ac;
+  align-self: center;
+}
+
+.banner-meni-wrap ul {
+  list-style: none;
+  margin: 0 auto;
+}
+
+.banner-meni-wrap ul li {
+  display: inline;
+}
+
+.banner-meni-wrap ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  margin-right: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.banner-meni-wrap ul li a:hover {
+  color: #0067ac;
+}
+
+/* Glavni content stil  */
+
+.content-wrap {
+  margin: 30px 0 30px 0;
+}
+
+.profesori {
+  display: grid;
+  grid-template-columns: 20% 20%;
+  grid-auto-rows: auto;
+  row-gap: 20px;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.kartica-profesor {
+  border: 2px solid whitesmoke;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background: rgba(44, 134, 194, 0.6);
+  text-align: center;
+  max-height: 440px;
+  font-size: 20px;
+  position: relative;
+}
+
+.kartica-profesor img {
+  height: 192px;
+  width: 108px;
+  margin: 20px auto;
+}
+
+.kartica-profesor .informacije {
+  display: grid;
+  grid-template-rows: repeat(4, 20%);
+}
+
+.kartica-profesor p {
+  text-align: center;
+  margin: 0;
+  border-top: 2px solid rgba(44, 134, 194, 0.6);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 13px;
+  text-shadow: 2px 2px black;
+}
+
+.kartica-profesor a {
+  color: rgba(44, 134, 194);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.asistenti {
+  display: grid;
+  grid-template-columns: 19% 19% 19%;
+  grid-auto-rows: auto;
+  row-gap: 20px;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.kartica-asistent {
+  border: 2px solid whitesmoke;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background: rgba(136, 197, 192, 0.7);
+  text-align: center;
+  max-height: 400px;
+  font-size: 20px;
+  position: relative;
+}
+
+.kartica-asistent img {
+  height: 192px;
+  width: 108px;
+  margin: 20px auto;
+}
+
+.kartica-asistent .informacije {
+  display: grid;
+  grid-template-rows: repeat(3, 25%);
+}
+
+.kartica-asistent p {
+  text-align: center;
+  margin: 0;
+  border-top: 2px solid black;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 13px;
+  text-shadow: 2px 2px black;
+}
+
+.kartica-asistent a {
+  color: rgba(44, 134, 194);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Footer stil */
+
+footer {
+  align-self: center;
+}
+
+footer a {
+  color: #0067ac;
+}

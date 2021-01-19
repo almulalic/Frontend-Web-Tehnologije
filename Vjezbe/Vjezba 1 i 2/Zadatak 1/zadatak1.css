@@ -1,0 +1,42 @@
+p {
+    display: block;
+    height: 100%;
+}
+
+p:nth-child(even) {
+    color:green;
+}
+
+p:nth-child(4n) {
+    text-decoration: underline;
+}
+
+img + p {
+    font-style: italic;
+}
+
+input[type="text"] {
+    background:gray;
+}
+
+input[type="password"] {
+    background:black;
+    color:white;
+}
+
+input[type="password"] + input {
+    color:blue;
+}
+
+p:hover {
+    color:yellow;
+}
+
+p:after {
+    content: "";
+    background: url("./icon.png") repeat-y;
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 20px;
+}

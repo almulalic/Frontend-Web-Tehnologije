@@ -1,0 +1,253 @@
+/* Main configuration */
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+body {
+  margin: 10px 0;
+  background: url("../bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-family: "Roboto";
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+  background: rgba(0, 0, 0, 0.6);
+  color: transparent;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/* Banner/meni stil */
+
+.banner-meni-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 20px 0 25px;
+}
+
+.banner-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 35%;
+  margin-bottom: 15px;
+}
+
+.banner-wrap > h1 {
+  color: #0067ac;
+  align-self: center;
+}
+
+.banner-meni-wrap ul {
+  list-style: none;
+  margin: 0 auto;
+}
+
+.banner-meni-wrap ul li {
+  display: inline;
+}
+
+.banner-meni-wrap ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  margin-right: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.banner-meni-wrap ul li a:hover {
+  color: #0067ac;
+}
+
+/* Glavni content stil  */
+
+.content-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+  margin-bottom: 25px;
+}
+
+/* General stuff */
+
+table {
+  color: black;
+  border-collapse: collapse;
+  width: 50%;
+  margin: 20px;
+}
+
+.opis {
+  width: 400px;
+}
+
+.edge {
+  border-left: 2px solid black;
+  border-top: 0;
+  background: gray;
+}
+
+.predavanje {
+  background: #ffcf9e;
+  color: #ff8c00;
+}
+
+.vjezba {
+  background: lightgreen;
+  color: darkgreen;
+}
+
+.profesor {
+  cursor: pointer;
+}
+
+.tutorial {
+  background: lightblue;
+  color: darkblue;
+}
+
+.kombinacija {
+  background: lightgray;
+  color: black;
+}
+
+.kabinet {
+  font-weight: normal;
+  display: block;
+}
+
+.pretraga-inputi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 0px 15% 0px 15%;
+}
+
+input[type="text"] {
+  border-radius: 10px;
+  padding: 12px 40px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.pretraga-input-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-button {
+  background: rgba(44, 134, 194, 0.3);
+  border: 2px solid white;
+  padding: 5px;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Lijeva tabela predmeti stil  */
+.lijeva-tabela th {
+  height: 45px;
+  font-size: 20px;
+  border: 2px solid black;
+  background: gray;
+  font-weight: normal;
+}
+
+.opis-red td {
+  text-align: left;
+  padding-left: 10px;
+  height: 45px;
+  border: 2px solid black;
+  background: gray;
+}
+
+.lijeva-tabela .red-predmet td {
+  border: 2px dashed black;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  padding: 15px;
+  background: white;
+}
+
+/* Desna tabela raspored  */
+
+.desna-tabela th {
+  height: 45px;
+  font-size: 20px;
+  border: 2px solid black;
+  text-align: center;
+  border-bottom: none;
+  background: gray;
+  font-weight: normal;
+}
+
+.desna-tabela .polje-sat {
+  background: white;
+}
+
+.desna-tabela .sat-red td {
+  border: 2px solid black;
+  padding: 10px;
+  height: 70px;
+}
+
+.desna-tabela .dani {
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 20%;
+  background: gray;
+}
+
+.desna-tabela .polje-predmet {
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.dotted td {
+  border: 1px dotted black;
+}
+
+/* Footer stil */
+
+footer {
+  align-self: center;
+}
+
+footer a {
+  color: #0067ac;
+}

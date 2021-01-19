@@ -1,0 +1,20 @@
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.clanovi {
+    background:#FFF2CC;
+    font-family: sans-serif;
+    width: 1px;
+    height: 1px;
+    border:1px solid black;
+}
+
+.zaglavlje {
+    font-weight: bold;
+    background:#CCCCCC;
+    height: 1px;
+    width: 1px;
+    border:1px solid black;
+}

@@ -1,0 +1,30 @@
+body {
+    background:cyan;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-style: bold;
+}
+
+h1 {
+    text-align: center;
+}
+
+.code {
+    margin-left:8px;
+}
+
+.codeSection {
+    font-size: 14px;
+}
+
+.logoWithText {
+    width:55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

@@ -1,0 +1,17 @@
+.inputField,.progress {
+    display: flex;
+    flex-direction: row;
+}
+
+input,.progress {
+    height: 25px;
+    align-self: center;
+    margin-right: 5px;
+    text-align: center;
+    margin:10px;
+}
+
+p {
+    align-self: center;
+    margin-left: 10px;
+}

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="bs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./predmeti.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Predmeti</title>
+  </head>
+  <body>
+    <div class="overlay">.</div>
+
+    <div class="main-wrapper">
+      <div class="banner-meni-wrap">
+        <div class="banner-wrap">
+          <a href="http://etf.unsa.ba"
+            ><img
+              src="http://www.etf.unsa.ba/etf/css/images/etf-dugi.gif"
+              alt="etf-logo"
+          /></a>
+
+          <h1>Razvoj Softvera</h1>
+        </div>
+
+        <ul class="meni">
+          <li><a href="../pocetna/pocetna.html">Početna</a></li>
+          <li><a href="../kontakt/kontakt.html">Kontakt</a></li>
+          <li><a href="../godine/godine.html">Godine</a></li>
+          <li><a href="../osoblje/osoblje.html">Osoblje</a></li>
+          <li><a href="../laboratorije/laboratorije.html">Laboratorije</a></li>
+        </ul>
+      </div>
+
+      <div class="button-wrap">
+        <div class="predmeti-button" onclick="handleSort()">
+          SORTIRAJ ABECEDNO
+        </div>
+        <div class="predmeti-button" onclick="handleToggle(1)">PRVA GODINA</div>
+        <div class="predmeti-button" onclick="handleToggle(2)">
+          DRUGA GODINA
+        </div>
+        <div class="predmeti-button" onclick="handleToggle(0)">
+          SVI PREDMETI
+        </div>
+      </div>
+
+      <div id="parent-container" class="content-wrap">
+        <div class="prva-godina predmet-kartica" id="uup">
+          <div class="header-predmeta">
+            <p>Naslov</p>
+            <p>Opis</p>
+            <p>Lista tema</p>
+            <p>Č</p>
+            <p>V</p>
+            <p>T</p>
+            <p>Profesori</p>
+            <p>Asistenti</p>
+          </div>
+
+          <div class="predmet-opis">
+            <div class="center"><p>Uvod u Programiranje</p></div>
+            <div class="center">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Dolore, dolorum veritatis rerum recusandae accusamus doloribus.
+                Nostrum, maxime. Mollitia deleniti laboriosam cupiditate. Ipsa
+                placeat quas accusantium inventore numquam perspiciatis
+                excepturi eveniet?
+              </p>
+            </div>
+            <div class="center">
+              <p>
+                Standardne arhitekture i načini programiranja, HTML, kaskadni
+                listovi stila ,vrste selektora, JavaScript protokoli na web-u,
+                principi web servera, java web programming, java server pages,
+                jezik PHP, pristup bazama podatka iz web aplikacija, XML, Web
+                servisi SOAP i REST
+              </p>
+            </div>
+            <div class="center"><p>3</p></div>
+            <div class="center"><p>4</p></div>
+            <div class="center"><p>3</p></div>
+            <div class="center"><p>Vedran Ljubović</p></div>
+            <div class="center"><p>Mirza Mesihović</p></div>
+          </div>
+        </div>
+
+        <div class="prva-godina predmet-kartica" id="rp">
+          <div class="header-predmeta">
+            <p>Naslov</p>
+            <p>Opis</p>
+            <p>Lista tema</p>
+            <p>Č</p>
+            <p>V</p>
+            <p>T</p>
+            <p>Profesori</p>
+            <p>Asistenti</p>
+          </div>
+
+          <div class="predmet-opis">
+            <div class="center"><p>Računarska Pismenost</p></div>
+            <div class="center">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Dolore, dolorum veritatis rerum recusandae accusamus doloribus.
+                Nostrum, maxime. Mollitia deleniti laboriosam cupiditate. Ipsa
+                placeat quas accusantium inventore numquam perspiciatis
+                excepturi eveniet?
+              </p>
+            </div>
+            <div class="center">
+              <p>
+                Trenutni tehnologški trendovi,osnovne računarske komponente,
+                korištenje interneta, aplikativni softver, sistemski softver,
+                razumjevanje i procjena hardvera, osnovni koncepti umrežavanja
+                računarskih sistema, digitalne komponente, etika u računarstvu
+              </p>
+            </div>
+            <div class="center"><p>3</p></div>
+            <div class="center"><p>4</p></div>
+            <div class="center"><p>3</p></div>
+            <div class="center"><p>Amila Akagić</p></div>
+            <div class="center"><p>Edvin Teskeredžić</p></div>
+          </div>
+        </div>
+
+        <div class="prva-godina predmet-kartica" id="mur1">
+          <div class="header-predmeta">
+            <p>Naslov</p>
+            <p>Opis</p>
+            <p>Lista tema</p>
+            <p>Č</p>
+            <p>V</p>
+            <p>T</p>
+            <p>Profesori</p>
+            <p>Asistenti</p>
+          </div>
+
+          <div class="predmet-opis">
+            <div class="center"><p>Matematika u Računarstvu 1</p></div>
+            <div class="center">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Dolore, dolorum veritatis rerum recusandae accusamus doloribus.
+                Nostrum, maxime. Mollitia deleniti laboriosam cupiditate. Ipsa
+                placeat quas accusantium inventore numquam perspiciatis
+                excepturi eveniet?
+              </p>
+            </div>
+            <div class="center">
+              <p>
+                Matematička logika, skupovi, predikatska logika,teorija
+                brojeva,enumerativna kombinatorika diskretna teorija
+                Vjerovatnoće, logika grafova, teorije jezika i automata
+              </p>
+            </div>
+            <div class="center"><p>3</p></div>
+            <div class="center"><p>4</p></div>
+            <div class="center"><p>3</p></div>
+            <div class="center"><p>Razija Tručinhodžić</p></div>
+            <div class="center"><p>Hana Bezdrob</p></div>
+          </div>
+        </div>
+
+        <div class="druga-godina predmet-kartica" id="ubp">
+          <div class="header-predmeta">
+            <p>Naslov</p>
+            <p>Opis predmeta</p>
+            <p>Lista tema</p>
+            <p>Č</p>
+            <p>V</p>
+            <p>T</p>
+            <p>Profesori</p>
+            <p>Asistenti</p>
+          </div>
+
+          <div class="predmet-opis">
+            <div class="center"><p>Uvod u Baze Podataka</p></div>
+            <div class="center">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Dolore, dolorum veritatis rerum recusandae accusamus doloribus.
+                Nostrum, maxime. Mollitia deleniti laboriosam cupiditate. Ipsa
+                placeat quas accusantium inventore numquam perspiciatis
+                excepturi eveniet?
+              </p>
+            </div>
+            <div class="center">
+              <p>
+                Osnove imperativnog programiranja u jeziku C++, napredno
+                imperativno porgramiranje u jeziku C++, objektno zasnovano
+                programiranje u jeziku C++, objektno orjetirano programiranje u
+                jeziku C++, polimorfno kopiranje
+              </p>
+            </div>
+            <div class="center"><p>3</p></div>
+            <div class="center"><p>4</p></div>
+            <div class="center"><p>3</p></div>
+            <div class="center"><p>Emir Buza</p></div>
+            <div class="center"><p>Emir Cogo</p></div>
+          </div>
+        </div>
+
+        <div class="druga-godina predmet-kartica" id="tp">
+          <div class="header-predmeta">
+            <p>Naslov</p>
+            <p>Opis</p>
+            <p>Lista tema</p>
+            <p>Č</p>
+            <p>V</p>
+            <p>T</p>
+            <p>Profesori</p>
+            <p>Asistenti</p>
+          </div>
+
+          <div class="predmet-opis">
+            <div class="center"><p>Tehnike Programiranja</p></div>
+            <div class="center">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Dolore, dolorum veritatis rerum recusandae accusamus doloribus.
+                Nostrum, maxime. Mollitia deleniti laboriosam cupiditate. Ipsa
+                placeat quas accusantium inventore numquam perspiciatis
+                excepturi eveniet?
+              </p>
+            </div>
+            <div class="center">
+              <p>
+                Osnove imperativnog programiranja u jeziku C++, napredno
+                imperativno porgramiranje u jeziku C++, objektno zasnovano
+                programiranje u jeziku C++, objektno orjetirano programiranje u
+                jeziku C++, polimorfno kopiranje
+              </p>
+            </div>
+            <div class="center"><p>3</p></div>
+            <div class="center"><p>4</p></div>
+            <div class="center"><p>3</p></div>
+            <div class="center"><p>Željko Jurić</p></div>
+            <div class="center">
+              <p>
+                Emir Cogo <br />
+                Mirza Mesihović
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="druga-godina predmet-kartica" id="fwt">
+          <div class="header-predmeta">
+            <p>Naslov</p>
+            <p>Opis</p>
+            <p>Lista tema</p>
+            <p>Č</p>
+            <p>V</p>
+            <p>T</p>
+            <p>Profesori</p>
+            <p>Asistenti</p>
+          </div>
+
+          <div class="predmet-opis">
+            <div class="center"><p>Frontend Web Tehnologije</p></div>
+            <div class="center">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Dolore, dolorum veritatis rerum recusandae accusamus doloribus.
+                Nostrum, maxime. Mollitia deleniti laboriosam cupiditate. Ipsa
+                placeat quas accusantium inventore numquam perspiciatis
+                excepturi eveniet?
+              </p>
+            </div>
+            <div class="center">
+              <p>
+                Standardne arhitekture i načini programiranja, HTML, kaskadni
+                listovi stila ,vrste selektora, JavaScript protokoli na web-u,
+                principi web servera, java web programming, java server pages,
+                jezik PHP, pristup bazama podatka iz web aplikacija, XML, Web
+                servisi SOAP i REST
+              </p>
+            </div>
+            <div class="center"><p>3</p></div>
+            <div class="center"><p>4</p></div>
+            <div class="center"><p>3</p></div>
+            <div class="center"><p>Vensada Okanović</p></div>
+            <div class="center"><p>Irfan Prazina</p></div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p class="italic">
+          Elektrotehnički fakultet Sarajevu - Razvoj Softvera -
+          <a href="http://etf.unsa.ba/" target="_blank">www.etf.unsa.ba</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="../skripta.js"></script>
+</html>

@@ -1,0 +1,53 @@
+h1 {
+    float: right;
+    color:red;
+}
+
+h2 {
+    position: absolute;
+    right:5px;
+    font-size: 12px;
+    top:45px;
+}
+
+#link_nazad {
+    position: fixed;
+    top:35px;
+    border:2px solid black;
+    padding:10px;
+    width: 100px;
+}
+
+#link_nazad:before {
+    content:'....';
+    background-image: url('http://www.tizag.com/pics/cssT/listArrow.gif');
+    background-size: cover;
+    color:transparent;
+}
+
+#link_nazad a {
+    color:red;
+}
+
+
+p {
+    clear: both;
+}
+
+.citat {
+    margin:0 auto;
+    background:lightgray;
+    border:2px solid black;
+    font-style: italic;
+    width:40%;
+}
+
+p a {
+    color:purple;
+}
+
+ul {
+    list-style-image: url('http://www.w3schools.com/cssref/sqpurple.gif');
+}
+
+

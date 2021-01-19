@@ -1,0 +1,46 @@
+
+.inputFields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr ;
+    width: 50%;
+}
+
+.singleField {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 50px;
+    margin:10px;
+}
+
+.singleField p {
+    margin-right: 5px;
+    width: 20%;
+}
+
+.singleField input[type="text"] {
+    width: 80%;
+    height: 50%;
+    align-self: center;
+}
+
+.singleField input,p {
+    align-self: center;
+}
+
+.checkbox,.odsjek {
+    display: flex;
+    flex-direction: row;
+}
+
+.odsjek p:not(:first-child){
+    margin-left:5px;
+    align-self: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width:50%;
+}

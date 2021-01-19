@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./kontakt.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <title>Kontakt</title>
+  </head>
+  <body>
+    <div class="overlay">.</div>
+
+    <div class="main-wrapper">
+      <div class="banner-meni-wrap">
+        <div class="banner-wrap">
+          <a href="http://etf.unsa.ba"
+            ><img
+              src="http://www.etf.unsa.ba/etf/css/images/etf-dugi.gif"
+              alt="etf-logo"
+          /></a>
+
+          <h1>Razvoj Softvera</h1>
+        </div>
+
+        <ul class="meni">
+          <li><a href="../pocetna/pocetna.html">Početna</a></li>
+          <li><a href="../kontakt/kontakt.html">Kontakt</a></li>
+          <li><a href="../godine/godine.html">Godine</a></li>
+          <li><a href="../osoblje/osoblje.html">Osoblje</a></li>
+          <li><a href="../laboratorije/laboratorije.html">Laboratorije</a></li>
+        </ul>
+      </div>
+
+      <div class="content-wrap">
+        <form action="submitKomentar">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="imeiPrezime"
+              aria-describedby="emailHelp"
+              placeholder="Unesite ime i prezime.."
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Unesite email"
+            />
+            <small id="emailHelp" class="form-text text-muted"
+              >Vaša email adresa neće nikada biti djeljena.</small
+            >
+          </div>
+          <div class="form-group ">
+            <select id="inputState" class="form-control">
+              <option selected disabled>Predmet...</option>
+              <option value="upit">Upit</option>
+              <option value="komentar">Komentar</option>
+              <option value="zahtjev">Zahtjev</option>
+              <option value="ostalo">Ostalo</option>
+            </select>
+          </div>
+
+          <div class="row">
+            <p class="col-sm">Polaznik</p>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input
+                type="radio"
+                id="customRadioInline1"
+                name="customRadioInline1"
+                class="custom-control-input"
+              />
+              <label class="custom-control-label" for="customRadioInline1"
+                >Da</label
+              >
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input
+                type="radio"
+                id="customRadioInline2"
+                name="customRadioInline1"
+                class="custom-control-input"
+              />
+              <label class="custom-control-label" for="customRadioInline2"
+                >Ne</label
+              >
+            </div>
+          </div>
+
+          <div class="form-group">
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              placeholder="Unesite komentar..."
+            ></textarea>
+          </div>
+
+          <div class="form-group row">
+            <label for="exampleFormControlFile1" class="col-sm">Dodatak</label>
+            <input
+              type="file"
+              class="form-control-file col-sm"
+              id="exampleFormControlFile1"
+            />
+          </div>
+          <div class="button">
+            <button type="submit" class="btn btn-secondary mb-2 col-sm">
+              Pošalji
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <footer>
+        <p class="italic">
+          Elektrotehnički fakultet Sarajevu - Razvoj Softvera -
+          <a href="http://etf.unsa.ba/" target="_blank">www.etf.unsa.ba</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  crossorigin="anonymous"
+></script>
